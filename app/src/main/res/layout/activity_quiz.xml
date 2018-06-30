@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"/>
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/progress"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        app:arc_progress="0"
+        app:arc_bottom_text="진행률"
+        app:arc_unfinished_color="#EAEAEA"
+        app:arc_finished_color="#4374D9"
+        app:arc_bottom_text_size="15sp" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"/>
+
+    <TextView
+        android:id="@+id/quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quiz"
+        android:layout_gravity="center"
+        android:layout_weight="0.1"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/answer"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:hint="정답을 입력하세요." />
+
+        <Button
+            android:id="@+id/answer_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="정답 확인" />
+
+    </LinearLayout>
+
+</LinearLayout>
